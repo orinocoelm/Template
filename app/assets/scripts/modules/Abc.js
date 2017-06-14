@@ -1,5 +1,18 @@
-function Abc() {
-	console.log("Abc");
+import $ from 'jquery';
+
+class Abc {
+	constructor() {
+		this.linky =  $(".linky");
+		this.events();
+	}
+	
+	events() {
+		this.linky.hover(this.linkyHover.bind(this));
+	}
+	
+	linkyHover() {
+		this.linky.toggleClass("linky-larger");
+	}
 };
 
-module.exports = Abc;
+export default Abc;

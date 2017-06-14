@@ -1,1 +1,8 @@
 /* _main.css file placeholder */
+.linky {
+	font-weight: 600;
+	
+	&-larger {
+		font-size: 1.5rem;
+	}
+}

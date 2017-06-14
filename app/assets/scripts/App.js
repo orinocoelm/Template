@@ -1,2 +1,2 @@
-var abc = require('./modules/Abc');
-console.log("This is App.js");
+import Abc from './modules/Abc';
+var abc = new Abc();
